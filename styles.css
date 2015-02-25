@@ -1,12 +1,15 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 
-.jumbotron img {
-	float: left;
+.jumbotron img.logo {
+	width: 230px;
+	height: 112px;
+}
+
+.jumbotron img.photo {
 	width: 140px;
 	height: 140px;
-	margin-right: 40px;
 }
