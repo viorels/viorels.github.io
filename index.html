@@ -2,19 +2,45 @@
 layout: default
 ---
 
-<div class="home">
+<div class="row">
+  <div class="col-md-4">
+    <h2>About me</h2>
+    <p>I've <strong>started programming</strong> on a ZX Spectrum computer when I was 14 years old and never stopped since. Meanwhile I've studied computer science, I've worked for different big companies and startups from Europe and US and now I'm doing freelancing. I've been <strong>recently working</strong> on Python/Django, Javascript and Android projects. These days I'm very <strong>interested</strong> in Bitcoin, distributed applications and machine learning!</p>
 
-  <h1>Posts</h1>
+    <p>I consider myself a polyglot developer and I like to learn about new frameworks and programming languages, specially about functional ones. I love <strong>challenging technical and algorithmical problems</strong> so if you have any then please <a href="/contact">contact me</a>!</p>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <p>Otherwise I have different hobbies like dancing argentine tango, flying gliders/paragliders and personal development. I live in the beautiful city of Cluj-Napoca, in the heart of Transilvania (GMT+2/3) and I like to travel once in a while.</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <!--... more about me: went to programming contests (show off rewards) ..., living in Cluj-Napoca, in the heart of Transilvania (GMT+2 or summer time), passionate about tango, flying, impro theater (show the man behind the mask in order to build trust) -->
+  </div>
+  <div class="col-md-4">
+    <h2>What I do</h2>
+    <ul>
+      <li><strong>Freelance web development</strong>, right now I'm available for about 4 days/week</li>
+      <li>Consultancy on software architecture and <strong>Bitcoin</strong></li>
+      <li>Coaching on Python/Javascript and algorithmic problems</li>
+    </ul>
+    <h3>My skills</h3>
+    <ul>
+      <li><strong>Python</strong> (since 2009), Django </li>
+      <li><strong>Javascript</strong> (since 2005), jQuery, Backbone</li>
+      <li>Some experience with: Go, Scala, Clojure, Groovy, Java, Perl, PHP, Bash, C/C++, ASM</li>
+      <li><strong>PostgreSQL</strong>, MySQL, <strong>Redis</strong>, Mongo</li>
+      <li>HTML/CSS (not pixel perfect)</li>
+      <li><strong>Git</strong>, Mercurial, Subversion</li>
+      <li><strong>HTTP</strong>, TCP/IP, SMTP, FTP, SSH, DNS, ARP
+      <li><strong>Linux</strong> geek (since 2000)</li>
+      <li><strong>Security</strong> aware (XSS, XSRF, SQL injection, buffer overflow)</li>
+    </ul>
+    <p><a class="btn btn-default" href="{{ site.baseurl }}/files/cv_viorel_stirbu_2015.pdf" target="_blank" role="button">Download CV</a></p>
+ </div>
+  <div class="col-md-4">
+    <h2>My work</h2>
+    <ul>
+      <li><a href="http://www.atexpc.ro">Atex</a> (photo and link, description, skills required, testimonial from client)</li>
+      <li><a href="http://www.instabridge.com">Instabridge</a></li>
+      <li>More on <a href="https://github.com/{{ site.username }}">GitHub</a> ...</li>
+    </ul>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
 </div>

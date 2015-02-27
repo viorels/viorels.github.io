@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<form action="http://formspree.io/{{ site.email }}" method="POST">
+  <input type="email" name="_replyto" placeholder="Your email">
+  <input type="hidden" name="_subject" value="stirbu.name contact form" />
+  <textarea name="body" placeholder="Tell me more..."></textarea>
+  <input type="hidden" name="_next" value="{{ site.baseurl }}/#thanks" />
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="submit" value="Send">
+</form>
