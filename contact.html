@@ -3,10 +3,21 @@ layout: default
 ---
 
 <form action="http://formspree.io/{{ site.email }}" method="POST">
-  <input type="email" name="_replyto" placeholder="Your email">
-  <input type="hidden" name="_subject" value="stirbu.name contact form" />
-  <textarea name="body" placeholder="Tell me more..."></textarea>
-  <input type="hidden" name="_next" value="{{ site.baseurl }}/#thanks" />
-  <input type="text" name="_gotcha" style="display:none" />
-  <input type="submit" value="Send">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2">
+      <div class="form-group">
+        <label for="inputEmail">Email address</label>
+        <input id="inputEmail" name="_replyto" type="email" class="form-control" placeholder="your email">
+      </div>
+      <div class="form-group">
+        <label for="inputBody">How can I help you?</label>
+        <textarea id="inputBody" name="body" class="form-control" rows="5" placeholder="tell me more..."></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="stirbu.name contact form" />
+      <input type="hidden" name="_next" value="{{ site.baseurl }}/#thanks" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" class="btn btn-default" value="Send">
+    </div>
+  </div>
 </form>
